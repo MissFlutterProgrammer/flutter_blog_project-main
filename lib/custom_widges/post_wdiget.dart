@@ -9,20 +9,16 @@ Widget getBlogPost({required String imageName, required String title}) {
           image: AssetImage('images/$imageName'),
         ),
       ),
-      SizedBox(
-        height: 10,
-      ),
+      SizedBox(height: 10),
       Text(
-        '$title',
+        title,
         textAlign: TextAlign.center,
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 16,
         ),
       ),
-      SizedBox(
-        height: 10,
-      ),
+      SizedBox(height: 10),
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -30,24 +26,20 @@ Widget getBlogPost({required String imageName, required String title}) {
             'فروش روی : ۱۲،۵۶۰',
             style: TextStyle(color: Colors.red),
           ),
-          SizedBox(
-            width: 10,
-          ),
+          SizedBox(width: 10),
           Icon(
             Icons.price_check,
             size: 25,
             color: Colors.red,
           ),
-          SizedBox(
-            width: 20,
-          ),
+          SizedBox(width: 20),
           Text(
             'خرید روی : ۱۲،۳۶۵',
-            style: TextStyle(color: Colors.green),
+            style: TextStyle(
+              color: Colors.green,
+            ),
           ),
-          SizedBox(
-            width: 10,
-          ),
+          SizedBox(width: 10),
           Icon(
             Icons.sell,
             size: 20,
@@ -55,7 +47,7 @@ Widget getBlogPost({required String imageName, required String title}) {
           ),
         ],
       ),
-      Container(
+      SizedBox(
         width: 200,
         child: Divider(
           color: Colors.black,

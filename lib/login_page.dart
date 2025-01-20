@@ -25,16 +25,16 @@ class LoginPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'VIP ورود به حساب سینگنال ',
                       style: TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 20.0),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.0,
+                      ),
                     )
                   ],
                 ),
@@ -43,9 +43,13 @@ class LoginPage extends StatelessWidget {
                 ),
                 OutlinedButton(
                   style: OutlinedButton.styleFrom(
-                      minimumSize: Size(200.0, 40.0),
-                      side: BorderSide(color: Colors.black, width: 2.0),
-                      primary: Colors.black),
+                    foregroundColor: Colors.black,
+                    minimumSize: Size(200.0, 40.0),
+                    side: BorderSide(
+                      color: Colors.black,
+                      width: 2.0,
+                    ),
+                  ),
                   onPressed: () {
                     navigateToBlogPage(context, BlogScreen());
                   },
@@ -56,16 +60,23 @@ class LoginPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('ثبت نام'),
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.black, minimumSize: Size(200.0, 43.0)),
+                    backgroundColor: Colors.black,
+                    minimumSize: Size(200.0, 43.0),
+                  ),
+                  child: Text('ثبت نام'),
                 ),
                 TextButton(
                   onPressed: () {
-                    navigateToBlogPage(context, PasswordRecovery());
+                    navigateToBlogPage(
+                      context,
+                      PasswordRecovery(),
+                    );
                   },
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.grey,
+                  ),
                   child: Text('فراموشی رمز عبور'),
-                  style: TextButton.styleFrom(primary: Colors.grey),
                 )
               ],
             ),
