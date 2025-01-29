@@ -6,7 +6,9 @@ Widget getBlogPost({required String imageName, required String title}) {
       ClipRRect(
         borderRadius: BorderRadius.circular(6),
         child: Image(
-          image: AssetImage('images/$imageName'),
+          image: AssetImage(
+            'images/$imageName',
+          ),
         ),
       ),
       SizedBox(height: 10),

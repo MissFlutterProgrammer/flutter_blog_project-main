@@ -5,8 +5,14 @@ class BlogScreen extends StatelessWidget {
   BlogScreen({Key? key}) : super(key: key);
 
   final List<Widget> listBlogWidget = [
-    getBlogPost(imageName: 's.png', title: 'title1'),
-    getBlogPost(imageName: 'a.png', title: 'title2'),
+    getBlogPost(
+      imageName: 's.png',
+      title: 'title1',
+    ),
+    getBlogPost(
+      imageName: 'a.png',
+      title: 'title2',
+    ),
   ];
 
   @override

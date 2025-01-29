@@ -33,7 +33,7 @@ class LoginPage extends StatelessWidget {
                       'VIP ورود به حساب سینگنال ',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 20.0,
+                        fontSize: 20,
                       ),
                     )
                   ],
@@ -44,14 +44,17 @@ class LoginPage extends StatelessWidget {
                 OutlinedButton(
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.black,
-                    minimumSize: Size(200.0, 40.0),
+                    minimumSize: Size(200, 40),
                     side: BorderSide(
                       color: Colors.black,
-                      width: 2.0,
+                      width: 2,
                     ),
                   ),
                   onPressed: () {
-                    navigateToBlogPage(context, BlogScreen());
+                    navigateToBlogPage(
+                      context,
+                      BlogScreen(),
+                    );
                   },
                   child: Text(
                     'ورود به حساب',
@@ -62,7 +65,7 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
-                    minimumSize: Size(200.0, 43.0),
+                    minimumSize: Size(200, 43),
                   ),
                   child: Text('ثبت نام'),
                 ),
@@ -76,7 +79,9 @@ class LoginPage extends StatelessWidget {
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.grey,
                   ),
-                  child: Text('فراموشی رمز عبور'),
+                  child: Text(
+                    'فراموشی رمز عبور',
+                  ),
                 )
               ],
             ),
